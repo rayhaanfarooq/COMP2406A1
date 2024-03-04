@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+  Notice in this source file there are no pre-attached
+  event handlers (javascript function calls).
+  They will be added in the supporting javascript file.
+-->
+<html>
+<head>
+
+  <h1 id="title" style="color: black; font-family: Spotify Circular; font-size: 60px; text-align: center;"> Welcome!</h1>
+
+  <style>
+    /*element selectors: */
+    /* body {
+      background: #1DB954;
+    } */
+
+    .title{
+      font-size: 60px;
+      font-family: "Spotify Circular";
+      color: black;
+      text-align: center;
+    }
+
+
+
+    .p{
+      font-size: large;
+      font-family: "Courier", Monospace;
+      color: black;
+      text-align: center;
+      
+      
+    }
+    /* class selectors: */
+    .chord {
+      font-size: large;
+      font-weight: bold;
+      font-family: "Courier", Monospace;
+      color: blue;
+      white-space: pre-wrap;
+    }
+
+    .transpose {
+      font-size: large;
+      font-weight: bold;
+      font-family: "Courier", Monospace;
+      color: #1DB954;
+      white-space: pre-wrap;
+      font-style: italic;
+    }
+
+
+    /*id selectors: */
+  </style>
+</head>
+
+<body>
+  <div id="text-area"></div>
+  <br>
+  <input type="text" id="userTextField" name="userTextField" value="" size="60" />
+  <input type="button" id="submit_button" value="Submit Request">
+  <input type="button" id="transpose_up" value="Transpose Up">
+  <input type="button" id="transpose_down" value="Transpose Down">
+
+
+  
+
+
+  <script src='client.js'></script>
+  <script src='chords.js'></script>
+  <script src='buttonHandlers.js'></script>
+  <script src='eventListeners.js'></script>
+
+</body>
+</html>
